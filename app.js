@@ -19,9 +19,6 @@ wasmLoaded.then(function(square) {
     document.getElementById("btn-wasm").addEventListener("click", function() {
         const value = document.getElementById("txtValue").value;
         console.log(square);
-        for(let i=1; i<=10000000; i++) {
-            square(value);
-        }
         console.log(square(value));
     }, false);
 });
